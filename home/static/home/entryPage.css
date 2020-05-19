@@ -1,0 +1,48 @@
+html, body {
+    background: rgb(20, 20, 20);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Svg {
+    height: 60px;
+    width: 320px;
+}
+
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+}
+
+.shape {
+    stroke-dasharray: 110 540;
+    stroke-dashoffset: -473;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #00a7a8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    height: 60px;
+    width: 310px;
+}
+
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+    text-decoration: none;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="{% static 'home/entryPage.css' %}">
+
+    {% if title %}
+        <title>Stella's Paintbrush - {{ title }}</title>
+    {% else %}
+        <title>Stella's Paintbrush</title>
+    {% endif %}
+
+</head>
+<body>
+<div class="svg-wrapper">
+    <svg class="Svg">
+        <rect class="shape" >
+            <div>
+                <a class="text" href="{% url 'portfolio-about' %}">Stella Talamo</a>
+            </div>
+        </rect>
+    </svg>
+</div>
+</body>
+
+
+
+
