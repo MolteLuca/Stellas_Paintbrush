@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,96 +15,9 @@
         <title>Stella's Paintbrush</title>
     {% endif %}
 
-    <style>
-        .myContainer {
-            margin-right: 5%;
-            margin-left: 5%;
-        }
-
-        @media (min-width: 1200px) {
-            #navbarContent {
-                width: 50%;
-                margin-left: 37.5%;
-            }
-
-            .nav-link {
-                margin: 0 20px 0 20px;
-                padding: 0 0 0 0;
-            }
-        }
-
-        @media (min-width: 1201px) and (max-width: 1350px) {
-            #navbarContent {
-                width: 50%;
-                margin-left: 35%;
-            }
-
-            .nav-link {
-                margin: 0 20px 0 20px;
-                padding: 0 0 0 0;
-            }
-
-        }
-
-        @media (min-width: 992px) and (max-width: 1200px) {
-            #navbarContent {
-                width: 50%;
-                margin-left: 30%;
-            }
-
-            .nav-link {
-                margin: 0 20px 0 20px;
-                padding: 0 0 0 0;
-            }
-
-        }
-
-        @media (max-width: 992px) {
-            hr {
-                display: none;
-            }
-        }
-
-        hr {
-            visibility: hidden;
-            margin: 0 0 10px 0;
-            border: 0;
-            height: 1px;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(106, 106, 106, 0.75), rgba(255, 255, 255, 0));
-        }
-
-
-    </style>
-
+    <link rel="stylesheet" href="{% static 'home/base.css' %}">
 </head>
 <body>
-<nav class="myContainer navbar navbar-expand-lg navbar-light" style="margin-top: 20px;">
-    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="color:white"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav active" id="navbarContent">
-            <li class="nav-item">
-                <button class="btn nav-link active"
-                        style="font-family: 'Roboto Condensed',serif; color:dimgray; left:50%"
-                        id="aboutMe">ABOUT<span
-                        class="sr-only">(current)</span></button>
-            </li>
-            <li class="nav-item">
-                <button class="btn nav-link" style="font-family: 'Roboto Condensed'; color:dimgray" id="myArt">MY ART
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="btn nav-link" style="font-family: 'Roboto Condensed'; color:dimgray" id="contactMe">
-                    CONTACT
-                </button>
-            </li>
-        </ul>
-    </div>
-</nav>
-<hr class="myContainer" style="visibility: visible;">
-
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -115,10 +29,33 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-<div class="myContainer" style="padding: 8px 16px 8px 16px">
+<div class="myContainer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a id="aboutMe"><i class="material-icons">info</i><span class="icon-text"></span>about</a><br>
+        <a id="myArt"><i class="material-icons">spa</i><span class="icon-text"></span>my art</a><br>
+
+        <a id="contactMe"><i class="material-icons">email</i><span class="icon-text"></span>contact</a>
+    </div>
     {% block content %} {% endblock %}
 </div>
+<script>
+    var mini = true;
 
+    function toggleSidebar() {
+        if (mini) {
+            this.mini = false;
+            document.getElementById("mySidebar").style.width = "210px";
+
+
+
+        } else {
+            document.getElementById("mySidebar").style.width = "5px";
+            this.mini = true;
+        }
+    }
+</script>
 
 </body>
 </html>
