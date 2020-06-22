@@ -74,7 +74,4 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r
 fi
-
-export TEST="this is a test"
-
-export SECRET_KEY="kii(f)myg61q+guzvoxxhof&es)kaaxh$dzwecg!jplr=0p6rp"
+vecd
