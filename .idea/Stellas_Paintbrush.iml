@@ -16,11 +16,12 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Stellas_Paintbrush)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="jquery-3.5.1" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
@@ -29,8 +30,5 @@
         <option value="$MODULE_DIR$/../Stellas_Paintbrush\templates" />
       </list>
     </option>
-  </component>
-  <component name="TestRunnerService">
-    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
   </component>
 </module>

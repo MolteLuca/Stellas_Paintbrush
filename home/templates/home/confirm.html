@@ -1,0 +1,34 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+
+    <style>
+        #mySidebar {
+            display: none;
+        }
+
+    @media screen and (max-width: 1200px){
+        .vid{
+            display: none;
+        }
+    }
+
+
+    </style>
+    <div class="jumbotron text-center" style="height:100vh; padding: 1%; margin-bottom: 0; background: #e0e0e04f;">
+        <h1 class="display-3 font-italic" style="font-family: Playfair Display,serif;">Thank You!</h1>
+        <p class="lead " style="font-family: Playfair Display,serif; font-size: x-large;"> I've received your request and I'll be in touch
+            with
+            you shortly. </p>
+        <video class="vid" autoplay muted loop>
+            <source src="{% static 'home/stella_video.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="lead font-italic" style="font-family: Playfair Display,serif; font-size: large; margin-top: 10px;"> Stay updated on my art! Follow me on <a
+                href="https://www.instagram.com/stellas_paintbrush/?hl=en"> Instagram</a></p>
+        <hr>
+        <p class="lead" style="font-family: Playfair Display,serif; font-size: large;">
+            <a href={% url 'portfolio-home' %}>Return to website</a>
+        </p>
+    </div>
+{% endblock %}
