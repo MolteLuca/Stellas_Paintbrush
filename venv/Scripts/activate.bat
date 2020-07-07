@@ -12,7 +12,6 @@ set VIRTUAL_ENV=C:\Users\molte\PycharmProjects\Stellas_Paintbrush\venv
 set SECRET_KEY="kii(f)myg61q+guzvoxxhof&es)kaaxh$dzwecg!jplr=0p6rp"
 set EMAIL_HOST_USER=testluca94@outlook.com
 set EMAIL_HOST_PASSWORD=Asdasd1!
-set EMAIL=asdasd!
 
 
 if not defined PROMPT set PROMPT=$P$G
