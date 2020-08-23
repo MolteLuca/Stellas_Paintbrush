@@ -24,7 +24,7 @@ SECRET_KEY = "kii(f)myg61q+guzvoxxhof&es)kaaxh$dzwecg!jplr=0p6rp"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://stellas-paintbrush.herokuapp.com/']
+ALLOWED_HOSTS = ['stellas-paintbrush.herokuapp.com/']
 
 # Application definition
 
