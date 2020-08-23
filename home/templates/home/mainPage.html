@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="{% static 'home/mainPage.css' %}">
 
-
     <div class="mainPage_content">
         <div style="height:100vh; margin-bottom: 5%">
             <div class="leftCarousel leftBgTopPage animated fadeIn" style="height:100vh; "><img class="paintingTopPage"
@@ -22,7 +21,7 @@
 
 
         <section class="content_aboutMe">
-            <div class="p-4 p-md-5 text-white rounded aboutContainer Row" >
+            <div class="p-4 p-md-5 text-white rounded aboutContainer Row">
                 <div class="leftCarousel" data-aos="fade-right" style="height: 100%;">
                     <img class="stellaPic" src="{% static 'home/stella.png' %}">
                 </div>
@@ -86,7 +85,7 @@
                 </div>
                 <div style="text-align: center;">
                     <h3 class=" font-italic" style="font-family: Playfair Display,serif"> If you wish to have a
-                        customize piece, please fill out the form below. <br> I will contact you as soon as possible!
+                        custom painting, please fill out the form below. <br> I will contact you as soon as possible!
                     </h3>
                 </div>
 
@@ -125,8 +124,36 @@
 
     </div>
 
-    <div class="mainPage_footer">
+    <div class="mainPage_footer" style="padding-bottom: 5px;">
+        <div class="container" style="background:transparent">
+            <footer class="row" style="text-align: center">
+                <div class="col-8">
+                    <ul class="row">
+                        <li class="col-xs-6 col-sm-2">
+                            <a href="https://www.facebook.com/StellasPaintbrush">
+                                <img class="logo"
+                                     src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2">
+                            <a href="https://www.instagram.com/stellas_paintbrush/?hl=en">
+                                <img class="logo"
+                                     src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3" onclick="topFunction()">
+                    <p style="color: white; font-size: 18px; margin-top: 13px;"> Go back to top </p>
+                </div>
+
+            </footer>
+        </div>
+        <div style="color: white; bottom: 0; width:100%; text-align: center">
+            <p style="margin-bottom: 0"> A website for Stella Talamo, by <b>Luca Molteni</b></p>
+        </div>
     </div>
+
 
     <script>
         $(document).ready(function () {
@@ -156,6 +183,13 @@
                 }, 1500);
             });
         })
+    </script>
+
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 
 

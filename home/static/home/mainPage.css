@@ -23,25 +23,27 @@
 }
 
 @media (min-width: 1401px) {
-    .textAboutMe{
+    .textAboutMe {
         font-size: 25px;
     }
-    .titleAboutMe{
+
+    .titleAboutMe {
         font-size: 60px;
     }
 }
 
 @media (min-width: 1241px) and (max-width: 1400px) {
-    .textAboutMe{
+    .textAboutMe {
         font-size: 17px;
     }
-    .titleAboutMe{
+
+    .titleAboutMe {
         font-size: 46px;
     }
 }
 
 /* Everything bigger than iPad */
-@media (min-width: 1241px)  {
+@media (min-width: 1241px) {
     .carousel-item {
         width: 100%;
     }
@@ -201,5 +203,50 @@
     margin: 0 25%;
 }
 
+li {
+    list-style-type: none;
+    margin-left: 1vw;
+}
 
+li:first-child {
+    margin: 0;
+}
 
+footer {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+.content {
+    height: 50vh;
+    background-color: lightgray;
+}
+
+.container {
+    background-color: beige;
+}
+
+.copyright, .impressum {
+    text-align: center;
+}
+
+.logo {
+    height: 8vh;
+}
+
+@media (max-width: 768px) {
+    li {
+        margin-left: 0;
+        margin-bottom: 1vh;
+    }
+
+    .sozial {
+        margin-bottom: 1vh;
+    }
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
