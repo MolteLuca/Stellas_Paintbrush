@@ -1,1 +1,1 @@
-web: gunicorn stellas-paintbrush.wsgi --log-file-
+web: gunicorn stellas-paintbrush.wsgi --log-file -
