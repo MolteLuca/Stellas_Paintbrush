@@ -24,7 +24,7 @@ SECRET_KEY = str(os.getenv("APP_SECRET_KEY"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stellas-paintbrush.herokuapp.com']
+ALLOWED_HOSTS = ['stellas-paintbrush.herokuapp.com', 'stellaspaintbrush.com']
 
 # Application definition
 

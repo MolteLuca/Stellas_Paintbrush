@@ -15,8 +15,8 @@ def home(request):
         phone = request.POST['phone']
         message = request.POST['messageContent']
         send_mail(
-            'Custom Piece Request',
-            'You have a new request for a custom piece! \n\nName: ' + firstName + ' ' + lastName + '\nEmail: ' + email
+            'Custom Painting Request',
+            'You have a new request for a custom painting! \n\nName: ' + firstName + ' ' + lastName + '\nEmail: ' + email
             + '\nPhone Number: ' + phone + '\n\nMessage: ' + message,
             settings.EMAIL_HOST_USER,
             [settings.EMAIL_HOST_USER],
